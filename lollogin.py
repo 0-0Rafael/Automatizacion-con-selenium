@@ -203,7 +203,7 @@ class LolLogin(unittest.TestCase):
         self.btn_entrar = self.cdriver.find_element(By.XPATH, "//button[contains(@type,'submit')]")
         self.btn_entrar.click()
 
-        time.sleep(10)    
+        time.sleep(10)     
 
         selec_posiciones = self.cdriver.find_element(By.XPATH, "//a[@data-testid='riotbar:desktopNav:link-internal-standings']")
         selec_posiciones.click()
