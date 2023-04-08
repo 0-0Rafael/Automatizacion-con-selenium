@@ -203,7 +203,7 @@ class LolLogin(unittest.TestCase):
         self.btn_entrar = self.cdriver.find_element(By.XPATH, "//button[contains(@type,'submit')]")
         self.btn_entrar.click()
 
-        time.sleep(10)     
+        time.sleep(10)      
 
         selec_posiciones = self.cdriver.find_element(By.XPATH, "//a[@data-testid='riotbar:desktopNav:link-internal-standings']")
         selec_posiciones.click()
@@ -271,8 +271,6 @@ class LolLogin(unittest.TestCase):
         self.cdriver.save_screenshot('opcion_cerrar.png')
         time.sleep(5)
         
-        
-
         
 
 # Crear una instancia del objeto LolLogin y utilizar sus métodos para iniciar sesión y seleccionar la liga LCK y LEC
